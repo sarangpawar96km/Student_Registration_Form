@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-heading">
+            Student Registration
+        </h1>
+        <hr>
+        <form action="">
+
+            <h3>1.Personal Information</h3>
+
+            <div class="personalinfo">
+
+                <div class="name">
+                    <label for="FullName">Full Name:</label>
+                    <input type="text" name="FullName" id="FullName" required>
+                </div>
+
+                <div class="dob">
+                    <label for="Date of birth">Date of birth:</label>
+                    <input type="Date" name="Date Of Birth" id="Dateofbirth" required>
+                </div>
+
+                <div class="gender">
+                    <label for="Gender" aria-required="true">Gender:</label>
+                    <div class="subgender">
+                        <p><input type="radio" name="Male" id="Male">Male</p>
+                        <p><input type="radio" name="Female" id="Female">  Female</p>
+                    </div>
+                </div>
+
+                <div class="nationality">
+                    <label for="Country">Nationality:</label>
+                    <select name="Country" required>
+                        <option value="Indian">Indian</option>
+                        <option value="American">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+
+                <div class="address">
+                    <label for="Address">Address:</label>
+                    <input type="text" name="Address" id="Address" required>
+                </div>
+
+                <div class="contact">
+                    <label for="Phone">Contact No:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="Email" name="Email" id="Email" required>
+                </div>
+            </div>
+            <hr>
+
+            <h3>2.Academic Information:</h3>
+            <div class="personalinfo">
+
+                <div class="name">
+                    <label for="FullName">Previous School/College Name:</label>
+                    <input type="text" name="Previous School/College Name" id="collegename" required>
+                </div>
+
+                <div class="dob">
+                    <label for="Year of Graduation/Completion">Year of Graduation/Completion:</label>
+                    <input type="Number" name="Year of Graduation/Completion" id="collegename" required>
+                </div>
+
+                <div class="address">
+                    <label for="GPA/Percentage">GPA/Percentage:</label>
+                    <input type="Number" name="GPA/Percentage" id="Address" required>
+                </div>
+
+                <div class="contact">
+                    <label for="Major/Area of Study">Major/Area of Study:</label>
+                    <input type="text" name="Major/Area of Study" id="phone" required>
+                </div>
+
+            </div>
+            <hr>
+
+            <h3>3.Additional Information:</h3>
+            <div class="personalinfo">
+
+                <div class="name">
+                    <label for="Emergency Contact Details">Emergency Contact Details:</label>
+                    <input type="Number" name="Emergency Contact Details" id="collegename" required>
+                </div>
+
+                <div class="dob">
+                    <label for="Medical Information/Allergies">Medical Information/Allergies:</label>
+                    <input type="text" name="Medical Information/Allergies" id="medical" required>
+                </div>
+
+                <div class="address">
+                    <label for="Citizenship/Visa Status (for international students)">Citizenship/Visa Status (for
+                        international students):</label>
+                    <input type="text" name="Citizenship/Visa Status (for international students)" id="Address" required>
+                </div>
+
+                <div class="contact">
+                    <label for="Language Proficiency">Language Proficiency:</label>
+                    <input type="text" name="Language Proficiency" id="phone" required>
+                </div>
+
+            </div>
+            <hr>
+
+            <h3>4.Educational Background:</h3>
+            <div class="educationalbackground">
+
+                <div class="name">
+                    <label for="High School/Secondary School Details">High School/Secondary School Details:</label>
+                    <input type="text" name="High School/Secondary School Details" class="details"
+                        style="margin-top: 5px;" required>
+                </div>
+                <br>
+                <div class="dob">
+                    <label for="Previous Degrees/Certifications (if any)">Previous Degrees/Certifications (if
+                        any):</label>
+                    <input type="text" name="Previous Degrees/Certifications (if any)" class="details" required>
+                </div>
+            </div>
+            <hr>
+
+            <h3>5.Supporting Documents (may require attachments):</h3>
+            <div class="personalinfo">
+
+                <div class="name">
+                    <label for="Passport/Identification">Passport/Identification:</label>
+                    <input type="file" name="Passport/Identification" id="phone" required>
+                </div>
+
+                <div class="dob">
+                    <label for="Academic Transcripts">Academic Transcripts:</label>
+                    <input type="file" name="Academic Transcripts" id="phone" required>
+                </div>
+
+                <div class="address">
+                    <label for="Recommendation Letters">Recommendation Letters:</label>
+                    <input type="file" name="Recommendation Letters" id="phone" required>
+                </div>
+
+                <div class="contact">
+                    <label for="Statement of Purpose/Essay (if required)">Statement of Purpose/Essay (if
+                        required):</label>
+                    <input type="file" name="Statement of Purpose/Essay (if required)" id="doc" required>
+                </div>
+
+            </div>
+            <hr>
+            <div class="buttons">
+                <button id="Save">Save</button>
+                <button id="update">Update</button>
+                <button id="delete">Delete</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

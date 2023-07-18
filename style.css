@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(240, 240, 136);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.main-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.personalinfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 40px 0;
+    max-width: 100%;
+}
+.personalinfo .name{
+    display: flex;
+    flex-direction: column;
+    
+}
+#FullName{
+    width: 120%;
+    padding: 3px;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 3px;
+}
+.dob{
+    display: flex;
+    flex-direction: column;
+}
+#Dateofbirth{
+    width: 120%;
+    padding: 3px;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 3px;
+}
+.gender{
+    display: flex;
+    flex-direction: column;
+}
+.subgender{
+    display: flex;
+    flex-direction: row;
+}
+
+#Male{
+    margin-right: 5px; 
+}
+#Female{
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.nationality{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    padding: 3px;
+    width: 125%;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 3px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+#Address{
+    width: 125%;
+    border: 2px solid rgba(161, 160, 160);
+    border-radius: 3px;
+    padding: 3px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+#phone{
+    width: 115%;
+        border: 2px solid rgba(161, 160, 160);
+        border-radius: 3px;
+        padding: 3px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+#Email{
+    width: 115%;
+        border: 2px solid rgba(161, 160, 160);
+        border-radius: 3px;
+        padding: 3px;
+}
+#collegename {
+    width: 150%;
+    padding: 3px;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 3px;
+}
+.educationalbackground{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 40px 0;
+}
+.details{
+    width: 102%;
+    padding: 3px;
+    border: 2px solid rgb(161, 160, 160);
+    border-radius: 3px;
+}
+.highschool{
+    margin-bottom: 10px;
+}
+#doc{
+    width: 109%;
+    border: 2px solid rgba(161, 160, 160);
+        border-radius: 3px;
+        padding: 3px;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    padding: 10px;
+    width: 10%;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(161, 160, 160);
+    font-weight: bold;
+    background-color: rgb(212, 239, 230);
+}
+label::after{
+    content: "*";
+    color: red;
+}
+#medical{
+    width: 135%;
+        border: 2px solid rgba(161, 160, 160);
+        border-radius: 3px;
+        padding: 3px;
+}
+
+/*Media Query*/
+@media(max-width:799px)
+{
+    .personalinfo {
+            flex-direction: column;
+            padding: 20px 0 20px 0;
+        }
+#FullName {
+    width: 100%;
+}
+#Dateofbirth {
+    width: 100%;
+}
+.dob {
+    
+    margin-top: 10px;
+}
+.gender {
+    margin-top: 10px;
+}
+.subgender {
+    display: flex;
+    flex-direction: row;
+}
+#Female{
+    margin-left: 15px;
+}
+.nationality {
+    
+    margin-top: 10px;
+}
+select {
+   width: 100%;
+}
+.address {
+   margin-top: 10px;
+}
+#Address {
+    width: 100%;
+}
+.contact {
+    margin-top: 10px;
+}
+#phone {
+    width: 100%;
+}
+.email {
+    margin-top: 10px;
+}
+#Email {
+    width: 100%;
+}
+#collegename {
+    width: 100%;
+}
+#medical {
+    width: 100%;
+}
+.details{
+    width: 114%;
+}
+#doc {
+    width: 100%;
+}
+button {
+    width: 20%;
+}
+}
+
+@media(max-width:499px)
+{
+.container {
+        padding: 0;
+        margin: 10px; 
+    }
+button {
+    width: 55%;
+}
+}
